@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.mozhimen.scank.code.zxing.test.MainActivity">
+
+        <ImageView
+            android:id="@+id/scank_demo_img"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/cok_blue_287ff1"
+            android:scaleType="centerCrop"
+            android:src="@color/cok_blue_e8f3ff" />
+
+        <EditText
+            android:id="@+id/scank_demo_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/scank_demo_btn_create"
+            style="@style/ScanKStyle_Btn"
+            android:text="生成QrCode"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</layout>

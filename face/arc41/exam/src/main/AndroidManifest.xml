@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".ArcFaceApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.ActivationActivity"
+            android:label="@string/active_engine"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.LivenessDetectActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".ui.activity.CameraConfigureActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".ui.activity.DataLengthCalculatorActivity"
+            android:label="@string/page_calculate_data_length"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.RecognizeSettingsActivity"
+            android:label="@string/page_settings"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:label="Home"
+            android:launchMode="singleTop"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.FaceManageActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.RegisterAndRecognizeActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".ui.activity.RecognizeDebugActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".ui.activity.ImageFaceAttrDetectActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".ui.activity.FaceCompareActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/FullScreenTheme" />
+    </application>
+</manifest>

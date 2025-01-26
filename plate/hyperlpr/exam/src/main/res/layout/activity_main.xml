@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.mozhimen.componentk.cameraxk.CameraXKLayout
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@color/ui_black"/>
+
+        <Button
+            android:id="@+id/btn_detect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="识别"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/dp_050"
+            android:layout_height="@dimen/dp_050"
+            app:layout_constraintBottom_toBottomOf="@id/btn_detect"
+            app:layout_constraintEnd_toStartOf="@id/btn_detect"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_detect"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_res"
+            style="@style/Txt_Style.Font_Sans_Serif.Gravity_Center.Style_Normal.Color_Gray_000.Size_014.Width_Wrap.Height_Wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_detect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_detect"
+            app:layout_constraintTop_toTopOf="@id/btn_detect"
+            tools:text="绿色新能源" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
