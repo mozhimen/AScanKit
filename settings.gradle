@@ -21,7 +21,7 @@ dependencyResolutionManagement {
 rootProject.name = "AScanKit"
 include ':color:test'
 include ':color:hsv'
-include ':code:hms'
+include ':code:huawei'
 include ':code:hms:test'
 include ':code:zxing'
 include ':code:zxing:test'
@@ -73,7 +73,8 @@ include ':ASwiftKit'
 project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
 include ':ASwiftKit:basick'
 include ':ASwiftKit:xmlk'
-include ':ASwiftKit:bindk'
+include ':ASwiftKit:uik:databinding'
+include ':ASwiftKit:uik'
 //ATaskKit
 include ':ATaskKit'
 project(':ATaskKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ATaskKit")
@@ -90,7 +91,7 @@ include ':ACacheKit:basic'
 //ASerialKit
 include ':ASerialKit'
 project(':ASerialKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASerialKit")
-include ':ASerialKit:gson'
+include ':ASerialKit:json:gson'
 //ACameraKit
 include ':ACameraKit'
 project(':ACameraKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ACameraKit")
